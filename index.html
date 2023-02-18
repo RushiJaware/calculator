@@ -8,12 +8,6 @@
     <title>Calculator</title>
     <link rel="stylesheet" href="css/style.css">
 
-    <style>
-        body{
-            background-image: url(pexels-pixabay-301703.jpg);
-            background-size: cover;
-        }
-    </style>
 </head>
 
 <body>
@@ -28,9 +22,10 @@
                     <div class="display">
                         <input type="text" name="display">
                     </div>
-                    <div >
+                    <div>
                         <input type="button" value="AC" onclick="display.value = ''" class="operator">
-                        <input type="button" value="DL" onclick="display.value = display.value.toString().slice(0,-1)" class="operator" >
+                        <input type="button" value="DL" onclick="display.value = display.value.toString().slice(0,-1)"
+                            class="operator">
                         <input type="button" value="." onclick="display.value += '.'" class="operator">
                         <input type="button" value="/" onclick="display.value += '/'" class="operator">
                     </div>
@@ -55,7 +50,8 @@
                     <div>
                         <input type="button" value="0" onclick="display.value += '0'">
                         <input type="button" value="00" onclick="display.value += '00'">
-                        <input type="button" value="=" class="equal operator" onclick="display.value = eval(display.value)" class="operator">
+                        <input type="button" value="=" class="equal operator"
+                            onclick="display.value = eval(display.value)" class="operator">
 
                     </div>
             </div>
